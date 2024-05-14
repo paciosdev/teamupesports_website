@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Rainblur Landing Page Template: Tailwind Toolbox</title>
+    <title>TeamUp Esports</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
-
+    <link rel="icon" type="image/x-icon" href="logo.png">
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
     <!--Replace with your tailwind.css once created-->
     <link href="https://unpkg.com/@tailwindcss/custom-forms/dist/custom-forms.min.css" rel="stylesheet" />
@@ -18,36 +18,44 @@
       html {
         font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
       }
+
+      .my-text-color{
+        color: #6847FF;
+      }
+
+      .my-bg-color{
+        background-color: #6847FF;
+      }
     </style>
   </head>
 
-  <body class="leading-normal tracking-normal text-neutral-300 m-6">
+  <body class="leading-normal tracking-normal text-neutral-300 m-6 my-bg-color">
     <div class="h-full">
 
       <!--Main-->
       <div class="container pt-14 md:pt-14 mx-auto flex flex-wrap flex-col md:flex-row items-center">
 
          <!-- Logo -->
-         <div class="w-full text-center mb-8">
-          <img src="logo.png" alt="Logo" class="mx-auto w-32" />
+         <div class="w-full text-center mb-8 w-full">
+          <a href="index.html"><img src="logo.png" alt="Logo" class="mx-auto w-32" /></a>
         </div>
         
         <!--Left Col-->
         <div class="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden mx-auto">
-          <h1 class="my-4 text-3xl md:text-5xl text-black opacity-75 font-bold leading-tight text-center md:text-left">
-            TeamUp Esports
+          <h1 class="my-4 text-3xl md:text-5xl text-white font-bold leading-tight text-center md:text-left">
+            TeamUp E-Sports
           </h1>
-          <p class="leading-normal text-black md:text-2xl mb-8 text-center md:text-left">
+          <p class="leading-normal text-white opacity-70 md:text-2xl mb-8 text-center md:text-left">
             Entra a far parte del mondo degli E-Sports, la tua piattaforma preferita sta per prendere vita!
           </p>
 
-          <form class="bg-indigo-500 opacity-90 w-full shadow-lg rounded-lg px-8 pt-6 pb-8 mb-4">
+          <form class="bg-white w-full shadow-lg rounded-lg px-8 pt-6 pb-8 mb-4">
             <div class="mb-4">
-              <label class="block text-white py-2 font-bold mb-2" for="emailaddress">
-                Iscriviti alla nostra newsletter
+              <label class="block my-text-color py-2 font-bold mb-2" for="emailaddress">
+                Iscriviti per rimanere aggiornato
               </label>
               <input
-                class="shadow appearance-none border rounded w-full p-3 text-gray-700 leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
+                class="bg-white shadow-indigo-500 appearance-none border rounded w-full p-3 my-text-color leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
                 id="emailaddress"
                 type="text"
                 placeholder="La tua email..."
@@ -56,7 +64,7 @@
 
             <div class="flex items-center justify-between pt-4">
               <button
-                class="mx-auto bg-white hover:from-pink-500 hover:to-green-500 text-indigo-600 font-bold py-2 px-6 rounded focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
+                class="mx-auto my-bg-color  hover:from-pink-500 hover:to-green-500 text-white font-bold py-2 px-6 rounded focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
                 type="button"
               >
                 Iscriviti
@@ -71,7 +79,7 @@
         </div>
 
         <!-- Our Team... -->
-        <div class="bg-white py-24 sm:py-32 mx-auto">
+        <div class="bg-white sm:py-32 mx-auto my-10 rounded-xl">
           <div class="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
             <div class="max-w-2xl">
               <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Il nostro team</h2>
@@ -83,17 +91,17 @@
                   <img class="h-16 w-16 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
                   <div>
                     <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Luigi Allocca</h3>
-                    <p class="text-sm font-semibold leading-6 text-indigo-600">Co-Founder / Presidente</p>
+                    <p class="text-sm font-semibold leading-6 my-text-color">Co-Founder / Presidente</p>
                   </div>
                 </div>
               </li>
 
               <li>
                 <div class="flex items-center gap-x-6">
-                  <img class="h-16 w-16 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                  <img class="h-16 w-16 rounded-full" src="francesco.png" alt="">
                   <div>
                     <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Francesco Paciello</h3>
-                    <p class="text-sm font-semibold leading-6 text-indigo-600">Co-Founder / Vice-Presidente</p>
+                    <p class="text-sm font-semibold leading-6 my-text-color">Co-Founder / Vice-Presidente</p>
                   </div>
                 </div>
               </li>
@@ -103,7 +111,7 @@
                   <img class="h-16 w-16 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
                   <div>
                     <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Antonio Allocca</h3>
-                    <p class="text-sm font-semibold leading-6 text-indigo-600">Co-Founder / Consigliere</p>
+                    <p class="text-sm font-semibold leading-6 my-text-color">Co-Founder / Consigliere</p>
                   </div>
                 </div>
               </li>
@@ -113,7 +121,17 @@
                   <img class="h-16 w-16 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
                   <div>
                     <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Antonio Toppi</h3>
-                    <p class="text-sm font-semibold leading-6 text-indigo-600">Co-Founder</p>
+                    <p class="text-sm font-semibold leading-6 my-text-color">Co-Founder</p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="flex items-center gap-x-6">
+                  <img class="h-16 w-16 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                  <div>
+                    <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Natale Rega</h3>
+                    <p class="text-sm font-semibold leading-6 my-text-color">Co-Founder</p>
                   </div>
                 </div>
               </li>
@@ -125,37 +143,33 @@
 
 
         <!-- Stats-->
-        <div class="bg-white py-24 sm:py-32 mx-auto">
+        <div class="my-bg-color py-24 sm:py-32 mx-auto">
           <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <dl class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
               <div class="mx-auto flex max-w-xs flex-col gap-y-4">
-                <dt class="text-base leading-7 text-gray-600">Team creati su TeamUp Esports</dt>
-                <dd class="order-first text-3xl font-semibold tracking-tight text-indigo-600 sm:text-5xl">12,781</dd>
+                <dt class="text-base leading-7 text-white opacity-70">Team creati su TeamUp Esports</dt>
+                <dd class="order-first text-3xl font-semibold tracking-tight text-white sm:text-5xl">12,781</dd>
               </div>
               <div class="mx-auto flex max-w-xs flex-col gap-y-4">
-                <dt class="text-base leading-7 text-gray-600">Soldi investiti nel progetto</dt>
-                <dd class="order-first text-3xl font-semibold tracking-tight text-indigo-600 sm:text-5xl">$182,828</dd>
+                <dt class="text-base leading-7 text-white opacity-70">Soldi investiti nel progetto</dt>
+                <dd class="order-first text-3xl font-semibold tracking-tight text-white  sm:text-5xl">$182,828</dd>
               </div>
               <div class="mx-auto flex max-w-xs flex-col gap-y-4">
-                <dt class="text-base leading-7 text-gray-600">Nuovi utenti annuali</dt>
-                <dd class="order-first text-3xl font-semibold tracking-tight text-indigo-600 sm:text-5xl">46,000</dd>
+                <dt class="text-base leading-7 text-white opacity-70">Nuovi utenti annuali</dt>
+                <dd class="order-first text-3xl font-semibold tracking-tight text-white  sm:text-5xl">46,000</dd>
               </div>
             </dl>
           </div>
         </div>
         
-        
-       
 
 
-
-
-<footer class="bg-white dark:bg-gray-900 mx-auto w-full max-w-screen-xl">
+<footer class="my-bg-color mx-auto w-full max-w-screen-xl">
   <div class="mx-auto w-full max-w-screen-xl">
     <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
       <div>
-          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Company</h2>
-          <ul class="text-gray-500 dark:text-gray-400 font-medium">
+          <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Company</h2>
+          <ul class="text-white opacity-70 dark:text-gray-400 font-medium">
               <li class="mb-4">
                   <a href="#" class=" hover:underline">About</a>
               </li>
@@ -171,8 +185,8 @@
           </ul>
       </div>
       <div>
-          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Help center</h2>
-          <ul class="text-gray-500 dark:text-gray-400 font-medium">
+          <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Help center</h2>
+          <ul class="text-white opacity-70 dark:text-gray-400 font-medium">
               <li class="mb-4">
                   <a href="#" class="hover:underline">Discord Server</a>
               </li>
@@ -188,8 +202,8 @@
           </ul>
       </div>
       <div>
-          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
-          <ul class="text-gray-500 dark:text-gray-400 font-medium">
+          <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Legal</h2>
+          <ul class="text-white opacity-70 dark:text-gray-400 font-medium">
               <li class="mb-4">
                   <a href="#" class="hover:underline">Privacy Policy</a>
               </li>
@@ -202,8 +216,8 @@
           </ul>
       </div>
       <div>
-          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Download</h2>
-          <ul class="text-gray-500 dark:text-gray-400 font-medium">
+          <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Download</h2>
+          <ul class="text-white opacity-70 dark:text-gray-400 font-medium">
               <li class="mb-4">
                   <a href="#" class="hover:underline">iOS</a>
               </li>
@@ -219,8 +233,8 @@
           </ul>
       </div>
   </div>
-  <div class="px-4 py-6 bg-indigo-100 dark:bg-indigo-600 md:flex md:items-center md:justify-between">
-      <span class="text-sm text-gray-500 dark:text-gray-300 sm:text-center">© 2024 <a href="#">Charos S.R.L.</a>. All Rights Reserved.
+  <div class="px-4 py-6 my-bg-color dark:my-bg-color md:flex md:items-center md:justify-between">
+      <span class="text-sm text-white opacity-70 dark:text-gray-300 sm:text-center">© 2024 <a href="#">Charos S.R.L.</a>. All Rights Reserved.
       </span>
       <div class="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
           <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
